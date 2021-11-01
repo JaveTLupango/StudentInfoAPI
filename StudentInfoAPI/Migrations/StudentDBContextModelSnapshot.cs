@@ -60,3 +60,4 @@ namespace StudentInfoAPI.Migrations
         }
     }
 }
+

@@ -25,6 +25,7 @@ namespace StudentInfoAPI.Controllers
             return await _context.students.ToListAsync();
         }
 
+
         // GET: api/Students/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
