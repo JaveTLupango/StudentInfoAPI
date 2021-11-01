@@ -22,10 +22,8 @@ namespace StudentInfoAPI.Models
 
         public int StudentLevel { get; set; }
 
-
         [Column(TypeName = "varchar(50)")]
         public string StudentContacts { get; set; }
-
 
         [Column(TypeName = "varchar(50)")]
         public string StudentEmail { get; set; }
@@ -33,6 +31,5 @@ namespace StudentInfoAPI.Models
         public DateTime TDT { get; set; }
 
         public DateTime UDT { get; set; }
-
     }
 }
