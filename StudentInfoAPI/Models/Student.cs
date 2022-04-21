@@ -7,7 +7,10 @@ namespace StudentInfoAPI.Models
     public class Student
     {
         [Key]
-        public int StudentID { get; set; }
+        public int Id { get; set; }
+
+        [Column(TypeName = "varchar(50)")]
+        public string StudentCode { get; set; }
 
         [Required]
         [Column(TypeName = "varchar(50)")]
@@ -27,6 +30,9 @@ namespace StudentInfoAPI.Models
 
         [Column(TypeName = "varchar(50)")]
         public string StudentEmail { get; set; }
+
+        [Column(TypeName = "varchar(50)")]
+        public string StudentAdviser { get; set; }
 
         public DateTime TDT { get; set; }
 
